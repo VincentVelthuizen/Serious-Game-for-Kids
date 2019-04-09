@@ -1,0 +1,39 @@
+<div class="panel panel-default factory">
+    <div class="panel-heading clearfix">
+        <span class="btn-group btn-group-sm pull-right" role="group">
+            <span class="btn-group" role="group">
+                <button id="buy-truck" type="button" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="bottom" title="{{#l}}This costs{{/l}} 500">
+                    <span class="text-success">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        {{#l}}Extra truck{{/l}}
+                    </span>
+                </button>
+            </span>
+        </span>
+        {{#l}}Factory{{/l}}
+    </div>
+    <div class="alert alert-info no-border-radius margin-bottom-0">
+        {{#l}}Your current order will cost you{{/l}} <strong id="factory-order-cost">0</strong>,
+        {{#l}}and use{{/l}} <strong id="factory-order-capacity">0</strong>/<span id="truck-capacity">250</span> {{#l}}capacity{{/l}}!
+    </div>
+    <div class="panel-body">
+        <form name="newFactoryOrder" action="">
+            <ul class="nav nav-tabs">
+                {{ #. }}
+                    <li class="text-capitalize">
+                        <a data-toggle="tab" href="#{{ . }}">{{#l}}{{ . }}{{/l}}</a>
+                    </li>
+                {{ /. }}
+            </ul>
+            <div class="tab-content">
+                {{ #. }}
+                    <div id="{{ . }}" class="tab-pane fade in"></div>
+                {{ /.}}
+            </div>
+            <button type="submit" class="btn btn-success pull-right margin-top-10">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                {{#l}}Place order{{/l}}
+            </button>
+        </form>
+    </div>
+</div>

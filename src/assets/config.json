@@ -1,0 +1,90 @@
+{
+  "hour": 4,
+  "isPaused": true,
+
+  "languages": [
+    {
+      "name": "English",
+      "iso": "en"
+    },
+    {
+      "name": "Nederlands",
+      "iso": "nl"
+    }
+  ],
+
+  "season": "Summer",
+  "yearDays": 364,
+  "seasons": [
+    "Summer",
+    "Autumn",
+    "Winter",
+    "Spring"
+  ],
+
+  "iconPerAmountProductSize": 10,
+
+  "maxSimultaneousOrders": 2,
+  "warehouseCapacity": 6,
+  "containerCapacity": 150,
+  "orderCapacity": 250,
+  "orderTransportDurationDays": 2,
+
+  "addContainerCost": 1000,
+  "costExtraTruck": 500,
+
+  "warehouseContainers": 3,
+  "money": 10000,
+
+  "playerSatisfaction": 100,
+  "customerSatisfaction": 120,
+
+  "neutralThreshold": 70,
+  "angryThreshold": 40,
+  "sendAwayThreshold": 20,
+
+  "score": null,
+
+  "completedOrders": 0,
+
+  "expectedDelivery": 7,
+  "orderGenerationTreshold": 1.75,
+
+  "penaltySendingCustomerAway": 0,
+
+  "level": 0,
+
+  "toastr": {
+    "closeButton": false,
+    "debug": false,
+    "newestOnTop": true,
+    "progressBar": true,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": true,
+    "onclick": null,
+    "showDuration": "200",
+    "hideDuration": "1000",
+    "timeOut": "2500",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  },
+
+  "swal": {
+    "timer": 3000
+  },
+
+  "scoreboard": {
+    "enabled": false,
+    "room": null,
+    "team": null,
+
+    "sendScoreInterval": 60,
+    "updateInterval": 60,
+
+    "url": "scoreboard.html",
+    "apiUrl": "http://scoreboard.test"
+  }
+}

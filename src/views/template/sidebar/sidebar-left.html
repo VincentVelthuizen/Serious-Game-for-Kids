@@ -1,0 +1,53 @@
+<div class="col-md-12">
+    <h3>{{#l}}Menu{{/l}}</h3>
+    <form name="language">
+        <div class="form-group">
+            <label for="language">{{#l}}Select language{{/l}}</label>
+            <select class="form-control" id="language" name="language">
+                {{ #languages }}
+                <option value="{{ iso }}" {{ #active }} selected {{
+                /active }}>
+                {{ name }}
+                </option>
+                {{ /languages}}
+            </select>
+        </div>
+    </form>
+</div>
+
+<div class="col-md-12 padding-left-right-15 margin-bottom-20">
+    <label>{{#l}}Join a room{{/l}}</label>
+    <button id="open-create-team-modal" class="btn btn-success btn-block">{{#l}}Create Team{{/l}}</button>
+</div>
+
+<div class="col-md-12 padding-left-right-15">
+    <div class="thumbnail">
+        <img class="img-responsive" src="src/assets/img/logos/dinalog.jpg" alt="Dutch Institute for Advanced Logistics">
+    </div>
+</div>
+
+<div class="col-md-12 padding-left-right-15">
+    <div class="thumbnail">
+        <img class="img-responsive" src="src/assets/img/logos/university-of-groningen.jpg" alt="University of Groningen">
+    </div>
+</div>
+
+<div class="col-md-12">
+    <p class="small">
+        {{#l}}Proudly created by{{/l}} Niels Wouda, Luc Pol, Rinnert Jan Politiek,
+        {{#l}}and{{/l}}
+        <a target="_blank"
+           href="https://github.com/LCfP/Serious-Game-for-Kids/blob/master/CONTRIBUTING.md">{{#l}}others{{/l}}</a>.
+    </p>
+    <p class="small">
+        {{#l}}See the{{/l}}
+        <a target="_blank" href="https://github.com/LCfP/Serious-Game-for-Kids">repository</a>
+        {{#l}}for the code and attributions{{/l}}.
+    </p>
+</div>
+
+<div class="col-md-12">
+    <p class="small">
+        {{#l}}Version{{/l}} 2.0, 26/03/2018.
+    </p>
+</div>

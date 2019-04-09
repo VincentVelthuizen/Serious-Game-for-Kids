@@ -1,0 +1,38 @@
+{
+  "structural": [
+    {
+      "name": "ECOMart",
+      "type": ["food"],
+      "expectation": {
+        "delivery": 7,
+        "quality": {
+          "food": 90
+        }
+      }
+    },
+    {
+      "name": "SportStore",
+      "type": ["clothing"],
+      "expectation": {
+        "delivery": 5
+      }
+    }
+  ],
+  "random": {
+    "nl": [
+      "Henk",
+      "Ingrid",
+      "Peter",
+      "Anne",
+      "Kees",
+      "Jan",
+      "Anna"
+    ],
+    "en": [
+      "Harry",
+      "Sally",
+      "Peter",
+      "Bob"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        {{#l}}Customers{{/l}}
+    </div>
+    {{ ^customers }}
+        <div class="panel-body no-customers">
+            <div class="text-center">
+                {{#l}}There are no customers yet!{{/l}}
+            </div>
+        </div>
+    {{ /customers }}
+    <ul id="customer-orders" class="list-group make-scrollable"></div>
+</div>
